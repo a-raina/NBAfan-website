@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Team Roster</title>
+    <link rel="stylesheet" href="website.css" type="text/css" />
+</head>
+<body>
+    <!--The top bar-->
+    <form action="index.py"><div id="home"><input type="submit" value="Home"></div></form>
+    <form action="allRoster.py"><div id="tab1"><input type="submit" value="Team Roster By Year"></div></form>
+    <form action="stats.py"><div id="tab2"><input type="submit" value="Stats By Year"></div></form>
+        
+    <form action="results.py" method="get">
+      <div id="tab3"><input type="text" name="player" value="" placeholder='Player Name' />
+        <input type="text" name="year" value="" placeholder='Year' /> 
+        <input type="submit" value="Search"/></div>
+     </form>
+     
+    <p></p>
+    <p></p>
+    <p><font color="white">Roster at the end of 2013 season: </font> </p>
+    <p></p>
+    %s
+</body>
+</html>

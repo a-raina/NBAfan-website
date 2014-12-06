@@ -1,0 +1,72 @@
+<!--Ben Weiss (weissb), Anmol Raina (rainaa) and Justin Lim (limju)
+
+This HTML file creates a page with the option to display any NBA team's roster from a year given by the user. -->
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Team Rosters</title>
+    <link rel="stylesheet" href="website.css" type="text/css" />
+</head>
+<body>
+    <!-- Creates buttons and a search bar for the page allowing the user to pick a year and a team -->
+    <form action="index.py"><div id="home"><input type="submit" value="Home"></div></form>
+    <form action="allRoster.py"><div id="tab1"><input type="submit" value="Team Roster By Year"></div></form>
+    <form action="stats.py"><div id="tab2"><input type="submit" value="Stats By Year"></div></form>>
+        
+         <form action="results.py" method="get">
+             <div id="tab3"><input type="text" name="player" value="" placeholder='Player Name' />
+          <input type="text" name="year" value="" placeholder='Year' /> 
+          <input type="submit" value="Search"/></div>
+         </form>
+    <p></p>
+    <p><font color="white">Please enter year and select team:</font> </p> 
+    
+    <form action="allRoster.py" method="get"> 
+
+    <!-- Gives the options of NBA teams that can be chosen -->
+    <p><input type="text" name="year"/ placeholder="Year"></p>
+    <select name="team">
+        <option value="ATL">Atlanta Hawks</option>
+        <option value="BOS">Boston Celtics</option>
+        <option value="BRK">Brooklyn Nets</option>
+        <option value="CHA">Charlotte Bobcats</option>
+        <option value="CHI">Chicago Bulls</option>
+        <option value="CLE">Cleveland Cavaliers</option>
+        <option value="DAL">Dallas Mavericks</option>
+        <option value="DEN">Denver Nuggets</option>
+        <option value="DET">Detroit Pistons</option>
+        <option value="GSW">Golden State Warriors</option>
+        <option value="HOU">Houston Rockets</option>
+        <option value="IND">Indiana Pacers</option>
+        <option value="LAC">Los Angeles Clippers</option>
+        <option value="LAL">Los Angeles Lakers</option>
+        <option value="MEM">Memphis Grizzlies</option>
+        <option value="MIA">Miami Heat</option>
+        <option value="MIL">Milwaukee Bucks</option>
+        <option value="MIN">Minnesota Timberwolves</option>
+        <option value="NJN">New Jersey Nets</option>
+        <option value="NOH">New Orleans Hornets</option>
+        <option value="NOP">New Orleans Pelicans</option>
+        <option value="NYK">New York Knicks</option>
+        <option value="OKC">Oklahoma City Thunder</option>
+        <option value="ORL">Orlando Magic</option>
+        <option value="PHI">Philadelphia 76ers</option>
+        <option value="PHO">Phoenix Suns</option>
+        <option value="POR">Portland Trail Blazers</option>
+        <option value="SAC">Sacramento Kings</option>
+        <option value="SAS">San Antonio Spurs</option>
+        <option value="SEA">Seattle Sonics</option>
+        <option value="TOR">Toronto Raptors</option>
+        <option value="UTA">Utah Jazz</option>
+        <option value="WAS">Washington Wizards</option>
+    </select>
+    <p></p>
+    <input type="submit" value="Submit">
+    <p></p> 
+    </form>
+    
+    <!-- Table will be inserted here -->
+    %s
+</body>
+</html>

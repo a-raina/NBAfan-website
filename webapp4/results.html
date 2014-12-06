@@ -1,0 +1,27 @@
+<a!DOCTYPE HTML>
+<!--results.html
+By: Ben Weiss, Justin Lim, Anmol Raina
+This html file acts as the template for our results file-->
+<html>
+<head>
+    <title>Search Results</title>
+    <link rel="stylesheet" href="website.css" type="text/css" />
+</head>
+<body>
+    <!--Have reference buttons so user's can navigate website-->
+    <form action="index.py"><div id="home"><input type="submit" value="Home"></div></form>
+    <form action="allRoster.py"><div id="tab1"><input type="submit" value="Team Roster By Year"></div></form>
+    <form action="stats.py"><div id="tab2"><input type="submit" value="Stats By Year"></div></form>
+    
+    <!--Get input from user-->
+    <form action="results.py" method="get">
+      <div id="tab3"><input type="text" name="player" value="" placeholder='Player Name' />
+        <input type="text" name="year" value="" placeholder='Year' /> 
+         <input type="submit" value="Search"/></div>
+ </form>
+    
+    <p><font color="white">Results of the query: </font></p> 
+    <!--Import table with results here-->
+    %s
+</body>
+</html>

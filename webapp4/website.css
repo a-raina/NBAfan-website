@@ -1,0 +1,137 @@
+/* 
+ * Style sheet for our entire website
+ * By: Ben Weiss, Justin Lim, Anmol Raina
+ */
+
+html {
+    height: 100%
+}
+body {
+    height: 100%;
+    padding: 10px;
+    margin: 10px;
+    font-color: white;
+    background-image: url("images/NBA.gif");
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+/* This section of the code (from tableDIV to dataTable), creates the
+ * the formatting for our data table
+ */
+
+#tableDIV {
+    height: 40%;
+    width: 50%;
+    float: left;
+    font-family: "Times New Roman";
+    font-size: 100%;
+    background-color: #3090C7;
+    overflow: auto;
+}
+#tableHeaderDIV {
+    height: 3%;
+    width: 50%;
+    font-family: "Times New Roman";
+    font-size: 100%;
+    background-color: white;
+    overflow: auto;
+}
+#dataTable {
+    font-family: "Trebuchet MS", "Arial", "Helvetica", "sans-serif";
+    width: 100%;
+    border-collapse: collapse;
+}
+#dataTableHeader {
+    font-family: "Trebuchet MS", "Arial", "Helvetica", "sans-serif";
+    width: 100%;
+    border-collapse: collapse;
+}
+#dataTableHeader th, td {
+    font-size: 100%;
+    text-align: center;
+    max-width: 40px ;
+    padding: 3px 8px 2px 0px;
+}
+#dataTable th, td {
+    font-size: 100%;
+    text-align: center;
+    max-width: 80px;
+    border: 3px solid black;
+    padding: 3px 8px 2px 0px;
+}
+
+/*The following two functions create the main search bar for our website
+ */
+
+#searchPlayerYearContainer {
+    width: 10%;
+    height: 10%;
+    font-family: "Trebuchet MS";
+    background-color: red;
+}
+#searchPlayerYearContainer input {
+    width: 100%;
+}
+
+/*The following two functions are for the team logos on the home page. All the 
+ * images are in one div class called img. We can access each individual image 
+ * using the img tag.*/
+
+.images {
+    display: table-cell;
+    float: left;
+    text-align: center;
+}
+
+.images img {
+    display: inline;                             
+    height: 60px;
+    width: 60px;
+}
+
+/*The following two functions are for the title div on the home page*/
+
+#titleDIV{
+  height: 10%;
+  width:100%;
+}    
+
+#title{
+   margin-top: 90px;
+   margin-left: 45px;
+   font-family: Impact, Charcoal, sans-serif;
+   font-style: oblique;
+   text-align: center;
+   font-size: 350%;
+   color: white;
+}
+
+/*The following three functions are used to align the buttons and the search bar on top in a row.
+ * This is done in a way such that it consistent accross webpages. Access to these buttons allows
+ * us to access different features of our website from anywebpage. This was done partially to
+ * compensate for breadcrumbs.*/
+#tab1{
+   
+  float: left;
+}
+#home{
+   float:left;
+}
+
+#tab2{
+    float:left;
+}
+
+#tab3{
+    float:right;
+}
+
+#search{
+    text-align: center;
+}
+
+#readMe{
+    text-align: center;
+}

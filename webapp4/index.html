@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<!--index.html
+By: Ben Weiss, Justin Lim, Anmol Raina
+This is the html for the results of main page's player/year search function-->
+<html>
+<head>
+    <title>NBA Fan Page</title>
+    <link rel="stylesheet" href="website.css" type="text/css" />
+</head>
+<body>
+    <!--Create buttons in order to create easy navigation throughout website-->
+    <form action="allRoster.py"><div id="tab1"> <p> <input type="submit" value="Team Roster By Year"/></p></div></form>
+    <form action="stats.py"><div id="tab2"><p> <input type="submit" value="Stats By Year"/> </p></div></form>
+    <p></p>
+        <div id="titleDIV" >
+        <p id="title">NBA Player Stats: 21st Century</p>        
+    </div>
+    <!--Implement main search function-->
+    <form action="results.py" method="get"> 
+        <div id="search">
+        <p><input type="text" name="player" value="" placeholder='Player Name' />
+        <input type="text" name="year" value="" placeholder='Year' />
+        <input type="submit" value="Search"/></a></p>
+        </div>
+    </form>
+    
+    <!--Create list of images which are links to player data about the current rosters of  NBA teams-->
+    <form action="currentRoster.py" method="get">
+        <p class="images">
+                <button type="submit" name="team" value="ATL"> <img class="item" src="images/ATL.jpg"/></button>
+                <button type="submit" name="team" value="BOS"> <img class="item" src="images/BOS.jpg"/></button>
+                <button type="submit" name="team" value="BRK"> <img class="item" src="images/BRK.jpg"/></button>   
+                <button type="submit" name="team" value="CHA"> <img class="item" src="images/CHA.jpg"/></button>
+                <button type="submit" name="team" value="CHI"> <img class="item" src="images/CHI.jpg"/></button>
+                <button type="submit" name="team" value="CLE"> <img class="item" src="images/CLE.jpg"/></button>
+                <button type="submit" name="team" value="DAL"> <img class="item" src="images/DAL.jpg"/></button>
+                <button type="submit" name="team" value="DEN"> <img class="item" src="images/DEN.jpg"/></button>
+                <button type="submit" name="team" value="DET"> <img class="item" src="images/DET.jpg"/></button> 
+                <button type="submit" name="team" value="GSW"> <img class="item" src="images/GSW.jpg"/></button> 
+                <button type="submit" name="team" value="HOU"> <img class="item" src="images/HOU.jpg"/></button>         
+                <button type="submit" name="team" value="IND"> <img class="item" src="images/IND.jpg"/></button>
+                <button type="submit" name="team" value="LAC"> <img class="item" src="images/LAC.jpg"/></button>
+                <button type="submit" name="team" value="LAL"> <img class="item" src="images/LAL.jpg"/></button>
+                <button type="submit" name="team" value="MEM"> <img class="item" src="images/MEM.jpg"/></button>
+                <button type="submit" name="team" value="MIA"> <img class="item" src="images/MIA.jpg"/></button>
+                <button type="submit" name="team" value="MIL"> <img class="item" src="images/MIL.jpg"/></button>
+                <button type="submit" name="team" value="MIN"> <img class="item" src="images/MIN.jpg"/></button>
+                <button type="submit" name="team" value="NJN"> <img class="item" src="images/NJN.jpg"/></button>
+                <button type="submit" name="team" value="NOH"> <img class="item" src="images/NOH.jpg"/></button> 
+                <button type="submit" name="team" value="NOP"> <img class="item" src="images/NOP.jpg"/></button>
+                <button type="submit" name="team" value="NYK"> <img class="item" src="images/NYK.jpg"/></button>
+                <button type="submit" name="team" value="OKC"> <img class="item" src="images/OKC.jpg"/></button>
+                <button type="submit" name="team" value="ORL"> <img class="item" src="images/ORL.jpg"/></button>
+                <button type="submit" name="team" value="PHI"> <img class="item" src="images/PHI.jpg"/></button>
+                <button type="submit" name="team" value="PHO"> <img class="item" src="images/PHO.jpg"/></button>
+                <button type="submit" name="team" value="POR"> <img class="item" src="images/POR.jpg"/></button>
+                <button type="submit" name="team" value="SAC"> <img class="item" src="images/SAC.jpg"/></button>
+                <button type="submit" name="team" value="SAS"> <img class="item" src="images/SAS.jpg"/></button>
+                <button type="submit" name="team" value="SEA"> <img class="item" src="images/SEA.jpg"/></button>
+                <button type="submit" name="team" value="TOR"> <img class="item" src="images/TOR.jpg"/></button>
+                <button type="submit" name="team" value="UTA"> <img class="item" src="images/UTA.jpg"/></button>
+                <button type="submit" name="team" value="WAS"> <img class="item" src="images/WAS.jpg"/></button>   
+             </p>
+        </form>
+        <!--Our readme file-->
+        <a href="http://thacker.mathcs.carleton.edu/cs257/rainaa/webapp4/readMe.html"><div id="readMe">Go To readMe</div></a>
+</body>
+</html>

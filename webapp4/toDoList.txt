@@ -1,0 +1,5 @@
+What we need to do to revise:
+
+3. When person searches keep values updated (INGNORE FOR NOW)
+4. Make error messages white
+

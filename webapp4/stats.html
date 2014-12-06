@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Best stats</title>
+    <link rel="stylesheet" href="website.css" type="text/css" />
+</head>
+<body>
+    
+    <!--The top bar-->
+    <form action="index.py"><div id="home"><input type="submit" value="Home"></div></form>
+    <form action="allRoster.py"><div id="tab1"><input type="submit" value="Team Roster By Year"></div></form>
+    <form action="stats.py"><div id="tab2"><input type="submit" value="Stats By Year"></div></form>
+        
+    <form action="results.py" method="get">
+      <div id="tab3"><input type="text" name="player" value="" placeholder='Player Name' />
+        <input type="text" name="year" value="" placeholder='Year' /> 
+         <input type="submit" value="Search"/></div>
+    </form>
+
+    <p></p>
+ 
+    <p><font color="white">Please choose a year and a stat: </font></p>
+    
+    <!--Creates a drop down of the years-->
+    <form action="stats.py" method="post"> 
+        <select name="year"> 
+             <option value="2000">2000</option>
+             <option value= "2001">2001</option>
+             <option value="2002">2002</option>
+             <option value="2003">2003</option>
+             <option value="2004">2004</option>
+             <option value="2005">2005</option>
+             <option value="2006">2006</option>
+             <option value="2007">2007</option>
+             <option value="2008">2008</option>
+             <option value="2009">2009</option>
+             <option value="2010">2010</option>
+             <option value="2011">2011</option>
+             <option value="2012">2012</option>
+             <option value="2013">2013</option>
+             <option value="2014">2014</option>
+         </select>
+         
+         <!--Creates a drop down of the stats-->
+         <select name="stat">
+            <option value="minutesPLayed">Minutes Played</option>
+            <option value="fieldGoalPercentage">FG%%</option>
+            <option value="threePointPercentage">3P%%</option>
+            <option value="freeThrowPercentage">FT%%</option>
+            <option value="totalreboundsPG">RPG</option>
+            <option value="assistsPG">APG</option>
+            <option value="stealsPG">SPG</option>
+            <option value="blocksPG">BPG</option>
+            <option value="personalFoulsPG">FPG</option>
+            <option value="pointsPG">PPG</option>
+        </select>
+        <select name = "order">
+            <option value="DESC">Descending</option>
+            <option value="ASC">Ascending</option>
+                    </select>
+      <input type="submit" value="Submit">
+    </form>
+    <p></p>
+    
+    <!-- Insert table into webpage -->
+    %s
+
+</body>
+</html>
